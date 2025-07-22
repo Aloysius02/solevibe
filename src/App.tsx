@@ -1,23 +1,11 @@
-import {
-  CustomerReviewsSection
-} from "./sections/CustomerReviewsSection";
-import {
-  FeaturedProductsSection
-} from "./sections/FeaturedProductsSection";
-import {
-  FooterSection
-} from "./sections/FooterSection";
-import {
-  HeroSection
-} from "./sections/HeroSection";
-import {
-  PremiumCollectionSection
-} from "./sections/PremiumCollectionSection";
-import {
-  TopSellingProductsSection
-} from "./sections/TopSellingProductsSection";
+import { CustomerReviewsSection } from "@/sections/CustomerReviewsSection";
+import { FeaturedProductsSection } from "@/sections/FeaturedProductsSection";
+import { FooterSection } from "@/sections/FooterSection";
+import { HeroSection } from "@/sections/HeroSection";
+import { PremiumCollectionSection } from "@/sections/PremiumCollectionSection";
+import { TopSellingProductsSection } from "@/sections/TopSellingProductsSection";
 
-export const WebSite = (): JSX.Element => {
+const WebSite = (): JSX.Element => {
   return (
     <div className="bg-black flex flex-row justify-center w-full">
       <div className="bg-black overflow-hidden w-full max-w-[1440px] relative">
@@ -43,3 +31,5 @@ export const WebSite = (): JSX.Element => {
     </div>
   );
 };
+
+export default WebSite;

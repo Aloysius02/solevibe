@@ -1,0 +1,1 @@
+export { PremiumCollectionSection } from "./PremiumCollectionSection";

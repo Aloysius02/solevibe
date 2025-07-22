@@ -1,14 +1,28 @@
-import React from "react";
-import { Button } from "../../../../components/ui/button";
-import { Input } from "../../../../components/ui/input";
+import {
+  Button
+} from "../../../../components/ui/button";
+import {
+  Input
+} from "../../../../components/ui/input";
 
 export const FooterSection = (): JSX.Element => {
   // Quick links data for mapping
-  const quickLinks = [
-    { name: "Home", href: "#" },
-    { name: "Collections", href: "#" },
-    { name: "Journal", href: "#" },
-    { name: "contact", href: "#" },
+  const quickLinks = [{
+    name: "Home",
+    href: "#"
+  },
+    {
+      name: "Collections",
+      href: "#"
+    },
+    {
+      name: "Journal",
+      href: "#"
+    },
+    {
+      name: "contact",
+      href: "#"
+    },
   ];
 
   return (
@@ -41,7 +55,7 @@ export const FooterSection = (): JSX.Element => {
                     key={index}
                     href={link.href}
                     className="opacity-70 font-['Outfit',Helvetica] font-normal text-white text-2xl hover:opacity-100 transition-opacity"
-                  >
+                    >
                     {link.name}
                   </a>
                 ))}
@@ -58,7 +72,7 @@ export const FooterSection = (): JSX.Element => {
                   <Input
                     className="absolute left-0 top-0 h-full w-full bg-transparent border-none text-white text-2xl font-['Outfit',Helvetica] font-medium placeholder:text-white placeholder:opacity-70 pl-5 focus-visible:ring-0 focus-visible:ring-offset-0"
                     placeholder="Enter Email"
-                  />
+                    />
                   <Button className="absolute right-0 top-0 h-full w-[190px] bg-white rounded-xl text-black text-2xl font-['Outfit',Helvetica] font-bold hover:bg-white/90">
                     Subscribe
                   </Button>

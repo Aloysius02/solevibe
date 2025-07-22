@@ -1,6 +1,10 @@
-import React from "react";
-import { Button } from "../../../../components/ui/button";
-import { Card, CardContent } from "../../../../components/ui/card";
+import {
+  Button
+} from "../../../../components/ui/button";
+import {
+  Card,
+  CardContent
+} from "../../../../components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -8,21 +12,20 @@ import {
 } from "../../../../components/ui/carousel";
 
 export const PremiumCollectionSection = (): JSX.Element => {
-  const carouselItems = [
-    {
-      id: 1,
-      image: "/shoe1.png",
-      title: "Discover Our Limited Edition Designer Collaborations",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-      aliquip ex ea commodo consequat. 
-      
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-      aliquip ex ea commodo consequat.`,
-    },
+  const carouselItems = [{
+    id: 1,
+    image: "/shoe1.png",
+    title: "Discover Our Limited Edition Designer Collaborations",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+    aliquip ex ea commodo consequat.
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+    aliquip ex ea commodo consequat.`,
+  },
   ];
 
   return (
@@ -49,71 +52,71 @@ export const PremiumCollectionSection = (): JSX.Element => {
                         {/* Product Image */}
                         <div className="relative w-[671px] h-full">
                           <img
-                            className="w-full h-full object-cover"
-                            alt="Shoe"
-                            src={item.image}
+                          className="w-full h-full object-cover"
+                          alt="Shoe"
+                          src={item.image}
                           />
-                        </div>
-
-                        {/* Content */}
-                        <div className="flex-1 flex flex-col p-12 pt-[93px]">
-                          <h3 className="[font-family:'Outfit',Helvetica] font-semibold text-white text-[40px] tracking-[0] leading-[normal] mb-10">
-                            {item.title}
-                          </h3>
-
-                          <p className="opacity-70 [font-family:'Outfit',Helvetica] font-normal text-white text-xl tracking-[0] leading-[normal] whitespace-pre-line mb-10">
-                            {item.description}
-                          </p>
-
-                          <div className="flex justify-between items-center mt-auto">
-                            <Button
-                              variant="outline"
-                              className="h-[41px] rounded-md border border-solid border-white bg-transparent hover:bg-white/10 hover:text-white"
-                            >
-                              <span className="[font-family:'Outfit',Helvetica] font-normal text-white text-xl tracking-[0] leading-[normal]">
-                                Buy Now
-                              </span>
-                            </Button>
-
-                            <div className="flex items-center">
-                              <button className="w-[23px] h-[41px] flex items-center justify-center">
-                                <img
-                                  className="w-full h-full"
-                                  alt="Previous"
-                                  src="/vector-23.svg"
-                                />
-                              </button>
-
-                              <span className="mx-4 [font-family:'Outfit',Helvetica] font-medium text-white text-xl tracking-[0] leading-[normal]">
-                                01/04
-                              </span>
-
-                              <button className="w-[23px] h-[41px] flex items-center justify-center">
-                                <img
-                                  className="w-full h-full"
-                                  alt="Next"
-                                  src="/vector-17.svg"
-                                />
-                              </button>
-                            </div>
-                          </div>
-                        </div>
                       </div>
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-              </Carousel>
 
-              {/* Pagination Dots */}
-              <div className="flex items-center gap-[3px] absolute bottom-4 left-1/2 transform -translate-x-1/2">
-                <div className="w-[25px] h-1.5 bg-white rounded-[10px]" />
-                <div className="w-1.5 h-1.5 bg-white rounded-[3px]" />
-                <div className="w-1.5 h-1.5 bg-white rounded-[3px]" />
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+                      {/* Content */}
+                      <div className="flex-1 flex flex-col p-12 pt-[93px]">
+                        <h3 className="[font-family:'Outfit',Helvetica] font-semibold text-white text-[40px] tracking-[0] leading-[normal] mb-10">
+                          {item.title}
+                        </h3>
+
+                        <p className="opacity-70 [font-family:'Outfit',Helvetica] font-normal text-white text-xl tracking-[0] leading-[normal] whitespace-pre-line mb-10">
+                          {item.description}
+                        </p>
+
+                        <div className="flex justify-between items-center mt-auto">
+                          <Button
+                            variant="outline"
+                            className="h-[41px] rounded-md border border-solid border-white bg-transparent hover:bg-white/10 hover:text-white"
+                            >
+                            <span className="[font-family:'Outfit',Helvetica] font-normal text-white text-xl tracking-[0] leading-[normal]">
+                              Buy Now
+                            </span>
+                          </Button>
+
+                          <div className="flex items-center">
+                            <button className="w-[23px] h-[41px] flex items-center justify-center">
+                              <img
+                              className="w-full h-full"
+                              alt="Previous"
+                              src="/vector-23.svg"
+                              />
+                          </button>
+
+                          <span className="mx-4 [font-family:'Outfit',Helvetica] font-medium text-white text-xl tracking-[0] leading-[normal]">
+                            01/04
+                          </span>
+
+                          <button className="w-[23px] h-[41px] flex items-center justify-center">
+                            <img
+                            className="w-full h-full"
+                            alt="Next"
+                            src="/vector-17.svg"
+                            />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </CarouselItem>
+              ))}
+          </CarouselContent>
+        </Carousel>
+
+        {/* Pagination Dots */}
+        <div className="flex items-center gap-[3px] absolute bottom-4 left-1/2 transform -translate-x-1/2">
+          <div className="w-[25px] h-1.5 bg-white rounded-[10px]" />
+          <div className="w-1.5 h-1.5 bg-white rounded-[3px]" />
+          <div className="w-1.5 h-1.5 bg-white rounded-[3px]" />
+        </div>
       </div>
-    </section>
-  );
+    </CardContent>
+  </Card>
+</div>
+</section>
+);
 };
